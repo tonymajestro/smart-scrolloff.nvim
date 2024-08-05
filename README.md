@@ -6,6 +6,9 @@ The easiest way to install smart-scrolloff is with lazy.nvim:
 
 ```lua
 -- lazy.nvim
+--
+-- scrolloff_percentage: controls how close the cursor can be to the top or bottom
+--                       of the screen before scrolling begins
 {
   "tonymajestro/smart-scrolloff.nvim"
   opts = {
