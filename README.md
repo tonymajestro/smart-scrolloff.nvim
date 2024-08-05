@@ -22,3 +22,15 @@ Automatically sets the [scrolloff](https://neovim.io/doc/user/options.html#'scro
 Normally scrolloff is a static value, representing the number of lines to keep above or below the cursor when scrolling (when not at the top or bottom of the document). However if you change your font size or resize your window, scrolloff will stay the same resulting in an inconsistent scrolling experience.
 
 With smart-scrolloff, your cursor will always be at the same place in the window when scrolling, regardless of window or font size.
+
+## Screenshots
+Scrolling without smart-scrolloff
+The cursor must travel all the way to the bottom of the document with smaller fonts
+
+![Large text without smart-scrolloff](/images/without-large.png)
+![Small text without smart-scrolloff](/images/without-small.png)
+
+Scrolling with smart-scrolloff (cursor is always at the same place when scrolling)
+
+![Large text with smart-scrolloff](/images/with-large.png)
+![Small text with smart-scrolloff](/images/with-small.png)
