@@ -21,7 +21,9 @@ M.setup = function(opts)
 	vim.api.nvim_create_autocmd({ "WinResized" }, {
 		group = vim.api.nvim_create_augroup("smart-scrolloff", { clear = true }),
 		callback = function()
-			vim.opt.scrolloff = math.floor(vim.o.lines * scrolloff_percentage)
+			local new_scrolloff = math.floor(vim.o.lines * scrolloff_percentage)
+			print("Updating scrolloff to " .. new_scrolloff)
+			vim.opt.scrolloff = new_scrolloff
 		end,
 	})
 end
