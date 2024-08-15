@@ -1,5 +1,5 @@
 # smart-scrolloff.nvim
-Dynamically adjusts the [scrolloff](https://neovim.io/doc/user/options.html#'scrolloff') setting when resizing your Neovim window. The smart-scrolloff plugin lets you specify a percentage instead of a static value for scrolloff so that your scrolling experience is consistent across screens of different sizes or resolutions.
+Smart scroll is a plugin that enables you to control the [scrolloff](https://neovim.io/doc/user/options.html#'scrolloff') setting using percentages instead of static line numbers. This is a more intuitive way to handle scrolling, especially as you move between laptops, monitors, and resized windows and font sizes. Smart scrolloff will always keep your scrolling experience consistent.
 
 ## Installation
 The easiest way to install smart-scrolloff is with lazy.nvim:
@@ -17,9 +17,6 @@ The easiest way to install smart-scrolloff is with lazy.nvim:
 },
 ```
 ## Features
-Automatically sets the [scrolloff](https://neovim.io/doc/user/options.html#'scrolloff') setting whenever the screen is resized.
+- Set the [scrolloff](https://neovim.io/doc/user/options.html#'scrolloff') feature to a percent instead of a static line number. This will ensure neovim starts scrolling whenever you are within `scrolloff_percentage` from the top or bottom of the window.
 
-Normally scrolloff is a static value, representing the number of lines to keep above or below the cursor when scrolling (when not at the top or bottom of the document). However if you change your font size or resize your window, scrolloff will stay the same resulting in an inconsistent scrolling experience.
-
-With smart-scrolloff, your cursor will always be at the same place in the window when scrolling, regardless of window or font size.
-
+- Automatically adjusts the scrolloff value when resizing the window or adjusting font size to ensure a consistent scrolling experience.
